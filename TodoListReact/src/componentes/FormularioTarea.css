@@ -1,0 +1,19 @@
+.task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,10 @@
+.filters {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}   

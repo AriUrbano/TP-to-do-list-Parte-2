@@ -1,0 +1,24 @@
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
