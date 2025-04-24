@@ -1,11 +1,11 @@
-import React from 'react'
-import './Estadistica.css'
+import React from 'react';
+import './Estadistica.css';
 function Estadistica(tarea) 
 {
     return (
-        <div>
-        <p>Tarea mas rapida completada: {tarea.dia} {tarea.duracion}</p> 
-        </div>
+        <div className="estadistica">
+        <p className="estadistica-texto">Tarea más rápida completada: {tarea.nombre} {tarea.duracion}</p>
+      </div>
     );
 }
 export default Estadistica;

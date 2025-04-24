@@ -1,19 +1,36 @@
-.task-form {
-    display: flex;
+.formulario-tarea {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.task-input {
-    flex-grow: 1;
-    padding: 10px;
-    font-size: 16px;
+.formulario-titulo {
+    color: #333;
+    margin-bottom: 15px;
 }
 
-.add-btn {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+.formulario-etiqueta {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.formulario-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formulario-boton {
+    background-color: #4caf50;
     color: white;
     border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
 }

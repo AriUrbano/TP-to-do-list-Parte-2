@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
+import './Tarea.css';
 
-function Tarea(tarea) {
-    return (
-      <div>
-        <h2>{tarea.nombre}</h2>
-        <p>Creada: {tarea.dia} {tarea.hora}</p> 
-        <p>Estado: {tarea.estado}</p> 
-        <button class="button elimnar u-full-width">Eliminar ×</button>
-      </div>
-    );
-  }
+function Tarea({ nombre, dia, hora, estado }) {
+  return (
+    <div className='tarea'>
+      <h2 className="tarea-nombre">{nombre}</h2>
+      <p className="tarea-fecha">Creada: {dia} {hora}</p>
+      <p className="tarea-estado">Estado: {estado}</p>
+      <button className="tarea-boton-eliminar">Eliminar ×</button>
+    </div>
+  );
+}
 
 export default Tarea;

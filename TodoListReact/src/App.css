@@ -1,21 +1,17 @@
-
-@media (max-width: 600px) {
-  .task-form {
-      flex-direction: column;
-  }
-  
-  .add-btn {
-      margin-top: 10px;
-  }
-  
-  .filters {
-      flex-direction: column;
-  }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Estilos del cuerpo */
 body {
   font-family: 'Arial', sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
 }

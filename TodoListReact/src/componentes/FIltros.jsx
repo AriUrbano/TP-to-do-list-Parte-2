@@ -1,12 +1,13 @@
-import React from 'react'
-import './Filtros.css'
+import React from 'react';
+import './Filtros.css';
+
 function Filtros() {
     return (
-      <div>
-        <button class="button elimnar u-full-width">Todas</button>
-        <button class="button elimnar u-full-width">Completadas</button>
-        <button class="button elimnar u-full-width">Pendientes</button>
-        <button class="button elimnar u-full-width">Eliminar Completadas</button>
+      <div className="filtros">
+        <button className="filtro-boton">Todas</button>
+        <button className="filtro-boton">Completadas</button>
+        <button className="filtro-boton">Pendientes</button>
+        <button className="filtro-boton-limpiar">Eliminar Completadas</button>
       </div>
     );
   }

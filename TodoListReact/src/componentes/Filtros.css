@@ -1,10 +1,23 @@
-.filters {
-    margin: 20px 0;
+.filtros {
     display: flex;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
-.filter-btn {
+.filtro-boton {
+    background-color: #2196f3;
+    color: white;
+    border: none;
     padding: 5px 10px;
+    border-radius: 4px;
     cursor: pointer;
-}   
+}
+
+.filtro-boton-limpiar {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
