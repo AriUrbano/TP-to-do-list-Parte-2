@@ -1,18 +1,12 @@
-import React from 'react';
 import './App.css';
-import FormularioTarea from './componentes/FormularioTarea';
-import ListadoTarea from './componentes/ListadoTarea';
-import Filtros from './componentes/FIltros';
-
+import TodoList from './componentes/TodoList';
 
 function App() {
   return (
-    <>
-    <FormularioTarea/>
-    <Filtros/>
-    <ListadoTarea/>
-    </>
-  )
+    <div className="app">
+      <TodoList />
+    </div>
+  );
 }
 
-export default App
+export default App;

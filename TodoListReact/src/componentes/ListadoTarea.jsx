@@ -3,15 +3,23 @@ import Tarea from './Tarea';
 import Estadistica from './Estadistica';
 import './ListadoTareas.css';
 
-
-function ListadoTarea() {
+function ListadoTareas({ tareas, onToggleCompletada, onEliminarTarea, tareaMasRapida }) {
   return (
     <div className="listado-tareas">
-    <Tarea className="pendiente" nombre="EFSI" dia="23/4/2025" hora="8:50:22" estado="Pendiente" />
-    <Tarea className="completa" nombre="Matematica" dia="2/5/2025" hora="9:64:42" estado="Completa" />
-    <Estadistica nombre="EFSI" duracion="1m" />
-  </div>
+      {tareas.map(tarea => (
+        <Tarea
+          key={tarea.id}
+          id={tarea.id}
+          nombre={tarea.nombre}
+          fechaCreacion={tarea.fechaCreacion}
+          completada={tarea.completada}
+          onToggleCompletada={onToggleCompletada}
+          onEliminarTarea={onEliminarTarea}
+        />
+      ))}
+      {tareaMasRapida && <Estadistica nombre={tareaMasRapida.nombre} duracion={tareaMasRapida.duracion} />}
+    </div>
   );
 }
 
-export default ListadoTarea;
+export default ListadoTareas;
